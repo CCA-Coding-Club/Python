@@ -1,6 +1,9 @@
 import pygame as pg
-import random
+import random, os
 
+
+#change to relevant directory
+gamepath = __file__[:-12]
 
 #always initialize
 pg.init()
@@ -8,7 +11,7 @@ pg.init()
 screen = pg.display.set_mode((800, 600))
 
 #background image
-background = pg.image.load('resources/bg1.jpg')
+background = pg.image.load(f'{gamepath}resources/bg1.jpg')
 
 #sound
 ###mixer.music.load('filename.wav')
@@ -19,11 +22,11 @@ background = pg.image.load('resources/bg1.jpg')
 
 #title bar
 pg.display.set_caption("Space Invaders")
-ulicon = pg.image.load("resources/play.png")
+ulicon = pg.image.load(f"{gamepath}resources/play.png")
 pg.display.set_icon(ulicon)
 
 #Player
-playerImg = pg.image.load('resources/spaceship.png')
+playerImg = pg.image.load(f'{gamepath}resources/spaceship.png')
 playerX = 370
 playerY = 480
 playerX_change = 0
@@ -41,14 +44,14 @@ q_of_aliens = 8
 #alien_t_switch = 0
 #old variables
 for i in range(q_of_aliens):
-    alienImg.append(pg.image.load('resources/alien.png'))
+    alienImg.append(pg.image.load(f'{gamepath}resources/alien.png'))
     alienX.append(random.randint(0, 800))
     alienY.append(random.randint(20, 150))
     alienX_change.append(0.3)
     alienY_change.append(0)
 
 #Laser
-laserImg = pg.image.load('resources/substract.png')
+laserImg = pg.image.load(f'{gamepath}resources/substract.png')
 laserX = 0
 laserY = 480
 cannon_posR = 43
@@ -68,7 +71,7 @@ laserY_change = 0.5
 laser_state = "ready"
 
 #alien explosion
-explosionImg = pg.image.load('resources/explode.png')
+explosionImg = pg.image.load(f'{gamepath}resources/explode.png')
 
 #Scoring
 score = 0
