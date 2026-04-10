@@ -1,0 +1,6 @@
+1. Make a list comprehension containing 7 words. For each word, check if the first letter of the word is a vowel. 
+2. Make a second list and fill it with the value 0 for the index that doesn't start with a vowel and 1 if it does.
+
+medium difficulty below
+3. Finally, use the list containing binary to print a series of words containing a vowel.
+IE. tell the computer to use the list containing 1s and 0s to locate and print out words in the list containing words that are associated with binary 1.
