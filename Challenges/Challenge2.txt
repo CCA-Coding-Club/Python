@@ -1,3 +1,4 @@
+Python
 1. Make a list comprehension containing 7 words. For each word, check if the first letter of the word is a vowel. 
 2. Make a second list and fill it with the value 0 for the index that doesn't start with a vowel and 1 if it does.
 
