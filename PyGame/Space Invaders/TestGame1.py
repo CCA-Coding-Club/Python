@@ -1,7 +1,9 @@
 import pygame as pg
 import random
+import os
 
-
+path = os.system('pwd')
+print(path)
 #always initialize
 pg.init()
 
