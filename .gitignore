@@ -207,7 +207,7 @@ marimo/_lsp/
 __marimo__/
 
 #Discord bots
-Projects/Discord_Bot/
+/Projects/Discord_Bot/
 
 #tempCodeRunner files
 tempCodeRunnerFile.*
