@@ -15,4 +15,4 @@ class Client(discord.Client):
 intents = discord.Intents.default()
 intents.message_content = True
 client = Client(intents=intents)
-client.run('MTUyMjY2MTgzOTUzNDU1NTI1Nw.GVnpoC.St5DZAuA9uX945Tr68DHTaqQKt4gAvZwkMRJ0E')
+client.run('Insert token Here')
